@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date Invitation</title>
+    <link rel="stylesheet" type="text/css" href="date.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Initial Invitation Section -->
+        <div id="invitation-section">
+            <h1>🌹 Would you like to go out with me for a date? 🌹</h1>
+            <div class="button-group">
+                <button class="response-button" onclick="showDatePicker()">Yes</button>
+                <button class="response-button" onclick="declineInvitation()">No</button>
+            </div>
+        </div>
+
+        <!-- Date Picker Section -->
+        <div id="date-picker" class="hidden">
+            <h2>When are you free?</h2>
+            <input type="datetime-local" id="dateTime" required>
+            <button class="action-button" onclick="showRestaurantChoices()">Click Me</button>
+        </div>
+
+        <!-- Restaurant Choice Section -->
+        <div id="restaurant-choice" class="hidden">
+            <h2>Where do you want to eat?</h2>
+            <select id="restaurant" required>
+                <option value="jollibee">Jollibee</option>
+                <option value="mcdo">McDonald's</option>
+                <option value="kfc">KFC</option>
+                <option value="pizza">Pizza Hut</option>
+            </select>
+            <button class="action-button" onclick="showFinalMessage()">Continue</button>
+        </div>
+
+        <!-- Final Confirmation Section -->
+        <div id="final-message" class="hidden">
+            <h2>See you soon pretty! 😊</h2>
+            <p id="confirmationMessage"></p>
+        </div>
+    </div>
+
+    <script src="date.js"></script>
+</body>
+</html>
