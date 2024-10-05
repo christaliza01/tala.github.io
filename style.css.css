@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f0e68c; /* Light yellow background */
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    text-align: center;
+    background: white; /* White background for the container */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    max-width: 400px; /* Maximum width for container */
+}
+
+h1, h2 {
+    color: #ff6347; /* Tomato color for the headings */
+}
+
+.button-group {
+    margin: 20px 0;
+}
+
+.response-button, .action-button {
+    background-color: #ff6347; /* Tomato color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 5px; /* Margin between buttons */
+}
+
+.response-button:hover, .action-button:hover {
+    background-color: #ff4500; /* Darker tomato color on hover */
+}
+
+.hidden {
+    display: none; /* Hide elements by default */
+}
+
+input[type="datetime-local"], select {
+    padding: 10px;
+    margin: 10px 0;
+    width: calc(100% - 20px); /* Adjust input and select to full width */
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
